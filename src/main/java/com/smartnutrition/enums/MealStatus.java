@@ -1,0 +1,8 @@
+package com.smartnutrition.enums;
+
+public enum MealStatus {
+    PRE_MEAL_UPLOADED,
+    POST_MEAL_UPLOADED,
+    MEAL_NOT_PACKED,
+    CONSUMPTION_DATA_MISSING
+}
