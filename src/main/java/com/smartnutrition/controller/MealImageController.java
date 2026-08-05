@@ -7,6 +7,7 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import com.smartnutrition.dto.request.FoodItemDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -30,12 +32,12 @@ public class MealImageController {
     @PostMapping(value = "/upload-image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     @Operation(
         summary = "Upload a meal image",
-        description = "Uploads a meal image captured from a parent's or teacher's device camera. Returns the public access URL of the stored file.",
+        description = "Uploads a meal image captured from a parent's or teacher's device camera. Returns the public access URL of the stored file, along with the AI-analyzed food items and their nutritional details.",
         responses = {
             @ApiResponse(
                 responseCode = "201", 
-                description = "Image uploaded successfully",
-                content = @Content(mediaType = "application/json", schema = @Schema(example = "{\"imageUrl\": \"/uploads/a1b2c3d4-e5f6.jpg\"}"))
+                description = "Image uploaded and analyzed successfully",
+                content = @Content(mediaType = "application/json", schema = @Schema(example = "{\"imageUrl\": \"/uploads/a1b2c3d4-e5f6.jpg\", \"extractedFoodItems\": []}"))
             ),
             @ApiResponse(responseCode = "400", description = "Invalid file or unsupported image format")
         }
@@ -45,7 +47,11 @@ public class MealImageController {
             @RequestParam("file") MultipartFile file) {
         try {
             String imageUrl = mealImageService.storeImage(file);
-            return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("imageUrl", imageUrl));
+            List<FoodItemDto> extractedFoodItems = mealImageService.analyzeImage(file);
+            return ResponseEntity.status(HttpStatus.CREATED).body(Map.of(
+                    "imageUrl", imageUrl,
+                    "extractedFoodItems", extractedFoodItems
+            ));
         } catch (IllegalArgumentException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("error", e.getMessage()));
         } catch (IOException e) {

@@ -70,6 +70,7 @@ com\smartnutrition\entity\MealFoodItem$Builder.class
 com\smartnutrition\dto\response\UserResponse.class
 com\smartnutrition\repository\RecipeRepository.class
 com\smartnutrition\entity\NutritionScore.class
+com\smartnutrition\service\MealImageService$1.class
 com\smartnutrition\repository\RefreshTokenRepository.class
 com\smartnutrition\entity\RefreshToken.class
 com\smartnutrition\entity\User.class
