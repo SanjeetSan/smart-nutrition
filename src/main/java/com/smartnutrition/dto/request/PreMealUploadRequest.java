@@ -11,6 +11,10 @@ public record PreMealUploadRequest(
 
     String preMealImageUrl,
 
+    java.math.BigDecimal boxLength,
+    java.math.BigDecimal boxWidth,
+    java.math.BigDecimal boxHeight,
+
     @NotEmpty(message = "Food item list cannot be empty")
     List<@jakarta.validation.Valid FoodItemDto> foodItems
 ) {}

@@ -12,6 +12,9 @@ public record MealResponse(
     LocalDate mealDate,
     String preMealImageUrl,
     String postMealImageUrl,
+    java.math.BigDecimal boxLength,
+    java.math.BigDecimal boxWidth,
+    java.math.BigDecimal boxHeight,
     MealStatus status,
     List<FoodItemDto> foodItems
 ) {}

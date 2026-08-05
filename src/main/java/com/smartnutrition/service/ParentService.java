@@ -40,8 +40,8 @@ public class ParentService {
         User parent = userRepository.findByEmail(parentEmail)
                 .orElseThrow(() -> new IllegalArgumentException("Parent user not found"));
 
-        Class_ studentClass = classRepository.findById(request.classId())
-                .orElseThrow(() -> new IllegalArgumentException("Class not found with ID: " + request.classId()));
+        Class_ studentClass = classRepository.findByClassCode(request.classCode())
+                .orElseThrow(() -> new IllegalArgumentException("Class not found with code: " + request.classCode()));
 
         // Generate unique student code (e.g. STU-123456)
         String studentCode;

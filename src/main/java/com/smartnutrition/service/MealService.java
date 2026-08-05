@@ -65,6 +65,9 @@ public class MealService {
                         .build());
 
         meal.setPreMealImageUrl(request.preMealImageUrl());
+        meal.setBoxLength(request.boxLength());
+        meal.setBoxWidth(request.boxWidth());
+        meal.setBoxHeight(request.boxHeight());
         meal.setStatus(MealStatus.PRE_MEAL_UPLOADED);
 
         Meal savedMeal = mealRepository.save(meal);
@@ -164,6 +167,9 @@ public class MealService {
                 meal.getMealDate(),
                 meal.getPreMealImageUrl(),
                 meal.getPostMealImageUrl(),
+                meal.getBoxLength(),
+                meal.getBoxWidth(),
+                meal.getBoxHeight(),
                 meal.getStatus(),
                 itemDtos
         );

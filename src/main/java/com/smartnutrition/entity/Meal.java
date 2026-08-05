@@ -30,6 +30,15 @@ public class Meal {
     @Column(name = "post_meal_image_url", length = 500)
     private String postMealImageUrl;
 
+    @Column(name = "box_length", precision = 5, scale = 2)
+    private java.math.BigDecimal boxLength;
+
+    @Column(name = "box_width", precision = 5, scale = 2)
+    private java.math.BigDecimal boxWidth;
+
+    @Column(name = "box_height", precision = 5, scale = 2)
+    private java.math.BigDecimal boxHeight;
+
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 30)
     private MealStatus status;
@@ -56,6 +65,9 @@ public class Meal {
     public LocalDate getMealDate() { return mealDate; }
     public String getPreMealImageUrl() { return preMealImageUrl; }
     public String getPostMealImageUrl() { return postMealImageUrl; }
+    public java.math.BigDecimal getBoxLength() { return boxLength; }
+    public java.math.BigDecimal getBoxWidth() { return boxWidth; }
+    public java.math.BigDecimal getBoxHeight() { return boxHeight; }
     public MealStatus getStatus() { return status; }
     public User getUploadedByParent() { return uploadedByParent; }
     public User getUploadedByTeacher() { return uploadedByTeacher; }
@@ -66,6 +78,9 @@ public class Meal {
     public void setMealDate(LocalDate mealDate) { this.mealDate = mealDate; }
     public void setPreMealImageUrl(String preMealImageUrl) { this.preMealImageUrl = preMealImageUrl; }
     public void setPostMealImageUrl(String postMealImageUrl) { this.postMealImageUrl = postMealImageUrl; }
+    public void setBoxLength(java.math.BigDecimal boxLength) { this.boxLength = boxLength; }
+    public void setBoxWidth(java.math.BigDecimal boxWidth) { this.boxWidth = boxWidth; }
+    public void setBoxHeight(java.math.BigDecimal boxHeight) { this.boxHeight = boxHeight; }
     public void setStatus(MealStatus status) { this.status = status; }
     public void setUploadedByParent(User uploadedByParent) { this.uploadedByParent = uploadedByParent; }
     public void setUploadedByTeacher(User uploadedByTeacher) { this.uploadedByTeacher = uploadedByTeacher; }
@@ -81,6 +96,9 @@ public class Meal {
         public Builder status(MealStatus v) { m.status = v; return this; }
         public Builder uploadedByParent(User v) { m.uploadedByParent = v; return this; }
         public Builder uploadedByTeacher(User v) { m.uploadedByTeacher = v; return this; }
+        public Builder boxLength(java.math.BigDecimal v) { m.boxLength = v; return this; }
+        public Builder boxWidth(java.math.BigDecimal v) { m.boxWidth = v; return this; }
+        public Builder boxHeight(java.math.BigDecimal v) { m.boxHeight = v; return this; }
         public Meal build() { return m; }
     }
 }

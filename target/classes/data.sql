@@ -3,11 +3,11 @@ INSERT IGNORE INTO schools (id, name, academic_year, address, is_active, created
 VALUES (1, 'Greenwood International School', '2025-2026', '123 Education Lane, Tech City', true, CURRENT_TIMESTAMP());
 
 -- Seed Classes
-INSERT IGNORE INTO classes (id, school_id, class_name, section, academic_year, is_active)
-VALUES (1, 1, 'Grade 3', 'A', '2025-2026', true);
+INSERT IGNORE INTO classes (id, school_id, class_name, section, academic_year, class_code, is_active)
+VALUES (1, 1, 'Grade 3', 'A', '2025-2026', 'CLS-3A', true);
 
-INSERT IGNORE INTO classes (id, school_id, class_name, section, academic_year, is_active)
-VALUES (2, 1, 'Grade 4', 'B', '2025-2026', true);
+INSERT IGNORE INTO classes (id, school_id, class_name, section, academic_year, class_code, is_active)
+VALUES (2, 1, 'Grade 4', 'B', '2025-2026', 'CLS-4B', true);
 
 -- Seed Students
 INSERT IGNORE INTO students (id, school_id, class_id, name, roll_number, student_code, gender, date_of_birth, weight_kg, height_cm, blood_group, is_active)

@@ -28,8 +28,8 @@ public record CreateStudentRequest(
     @Size(max = 5, message = "Blood group cannot exceed 5 characters")
     String bloodGroup,
 
-    @NotNull(message = "Class ID is required")
-    Long classId,
+    @NotBlank(message = "Class code is required")
+    String classCode,
 
     @NotNull(message = "Relationship is required (MOTHER, FATHER, GUARDIAN)")
     Relationship relationship
