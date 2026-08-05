@@ -12,5 +12,5 @@ public record PreMealUploadRequest(
     String preMealImageUrl,
 
     @NotEmpty(message = "Food item list cannot be empty")
-    List<FoodItemDto> foodItems
+    List<@jakarta.validation.Valid FoodItemDto> foodItems
 ) {}
