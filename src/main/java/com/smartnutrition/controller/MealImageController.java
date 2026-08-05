@@ -44,10 +44,12 @@ public class MealImageController {
     )
     public ResponseEntity<?> uploadImage(
             @Parameter(description = "The image file captured from camera", required = true)
-            @RequestParam("file") MultipartFile file) {
+            @RequestParam("file") MultipartFile file,
+            @Parameter(description = "Optional food keyword to force a specific mock response during development (e.g. 'burger', 'roti', 'salad')", required = false)
+            @RequestParam(value = "mockFood", required = false) String mockFood) {
         try {
             String imageUrl = mealImageService.storeImage(file);
-            List<FoodItemDto> extractedFoodItems = mealImageService.analyzeImage(file);
+            List<FoodItemDto> extractedFoodItems = mealImageService.analyzeImage(file, mockFood);
             return ResponseEntity.status(HttpStatus.CREATED).body(Map.of(
                     "imageUrl", imageUrl,
                     "extractedFoodItems", extractedFoodItems

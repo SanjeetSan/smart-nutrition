@@ -69,9 +69,10 @@ public class MealImageService {
      * Falls back to a smart mock analysis if the Gemini API Key is missing.
      */
     @SuppressWarnings("unchecked")
-    public List<FoodItemDto> analyzeImage(MultipartFile file) {
+    public List<FoodItemDto> analyzeImage(MultipartFile file, String mockFood) {
         if (apiKey == null || apiKey.isBlank()) {
-            return getMockFoodItems(file.getOriginalFilename());
+            String queryName = (mockFood != null && !mockFood.isBlank()) ? mockFood : file.getOriginalFilename();
+            return getMockFoodItems(queryName);
         }
 
         try {
