@@ -1,6 +1,8 @@
 package com.smartnutrition.controller;
 
+import com.smartnutrition.dto.request.CreateStudentRequest;
 import com.smartnutrition.dto.request.LinkStudentRequest;
+import com.smartnutrition.dto.response.ClassResponse;
 import com.smartnutrition.dto.response.StudentResponse;
 import com.smartnutrition.service.ParentService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -26,6 +28,16 @@ public class ParentController {
         this.parentService = parentService;
     }
 
+    @PostMapping("/student")
+    @PreAuthorize("hasRole('PARENT')")
+    @Operation(summary = "Create a new student profile and link it to the authenticated parent")
+    public ResponseEntity<StudentResponse> createStudent(
+            @AuthenticationPrincipal UserDetails userDetails,
+            @Valid @RequestBody CreateStudentRequest request) {
+        StudentResponse response = parentService.createAndLinkStudent(userDetails.getUsername(), request);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+
     @PostMapping("/link-student")
     @PreAuthorize("hasRole('PARENT')")
     @Operation(summary = "Link parent account to a student using student code (e.g. STU-A001)")
@@ -43,5 +55,13 @@ public class ParentController {
             @AuthenticationPrincipal UserDetails userDetails) {
         List<StudentResponse> students = parentService.getLinkedStudents(userDetails.getUsername());
         return ResponseEntity.ok(students);
+    }
+
+    @GetMapping("/classes")
+    @PreAuthorize("hasRole('PARENT')")
+    @Operation(summary = "Get list of active classes for parent dropdown selection")
+    public ResponseEntity<List<ClassResponse>> getActiveClasses() {
+        List<ClassResponse> classes = parentService.getActiveClasses();
+        return ResponseEntity.ok(classes);
     }
 }

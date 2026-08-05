@@ -1,6 +1,7 @@
 com\smartnutrition\dto\request\PostMealUploadRequest.class
 com\smartnutrition\entity\User$Builder.class
 com\smartnutrition\exception\GlobalExceptionHandler.class
+com\smartnutrition\dto\request\CreateStudentRequest.class
 com\smartnutrition\entity\MealFoodItem.class
 com\smartnutrition\dto\request\FoodItemDto.class
 com\smartnutrition\entity\School$Builder.class
@@ -29,6 +30,7 @@ com\smartnutrition\repository\UserRepository.class
 com\smartnutrition\controller\ReportController.class
 com\smartnutrition\entity\RefreshToken$Builder.class
 com\smartnutrition\enums\FoodItemSource.class
+com\smartnutrition\dto\response\ClassResponse.class
 com\smartnutrition\config\WebConfig.class
 com\smartnutrition\controller\MealController.class
 com\smartnutrition\entity\Student.class
@@ -36,6 +38,7 @@ com\smartnutrition\repository\StudentRepository.class
 com\smartnutrition\enums\MealStatus.class
 com\smartnutrition\security\JwtAuthenticationFilter.class
 com\smartnutrition\controller\ParentController.class
+com\smartnutrition\repository\ClassRepository.class
 com\smartnutrition\security\CustomUserDetailsService.class
 com\smartnutrition\service\AuthService.class
 com\smartnutrition\repository\ParentStudentRepository.class
