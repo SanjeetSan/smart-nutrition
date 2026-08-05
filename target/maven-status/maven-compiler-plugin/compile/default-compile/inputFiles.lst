@@ -26,6 +26,7 @@ C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\ReportController.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\response\StudentResponse.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\MealController.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\config\WebConfig.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\response\MealResponse.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\enums\MealStatus.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\enums\NutritionClassification.java
@@ -35,8 +36,10 @@ C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\exception\GlobalExceptionHandler.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\entity\StudentAllergy.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\entity\Student.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\MealImageService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\entity\NutritionScore.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\repository\MealFoodItemRepository.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\MealImageController.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\repository\StudentRepository.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\MealService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\request\PreMealUploadRequest.java

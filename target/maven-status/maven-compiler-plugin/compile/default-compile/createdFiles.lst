@@ -29,6 +29,7 @@ com\smartnutrition\repository\UserRepository.class
 com\smartnutrition\controller\ReportController.class
 com\smartnutrition\entity\RefreshToken$Builder.class
 com\smartnutrition\enums\FoodItemSource.class
+com\smartnutrition\config\WebConfig.class
 com\smartnutrition\controller\MealController.class
 com\smartnutrition\entity\Student.class
 com\smartnutrition\repository\StudentRepository.class
@@ -51,10 +52,12 @@ com\smartnutrition\repository\MealRepository.class
 com\smartnutrition\service\MealService.class
 com\smartnutrition\entity\NutritionScore$Builder.class
 com\smartnutrition\dto\request\PreMealUploadRequest.class
+com\smartnutrition\controller\MealImageController.class
 com\smartnutrition\repository\StudentAllergyRepository.class
 com\smartnutrition\enums\AlertSeverity.class
 com\smartnutrition\entity\Class_$Builder.class
 com\smartnutrition\entity\StudentAllergy$Builder.class
 com\smartnutrition\entity\ParentStudent.class
+com\smartnutrition\service\MealImageService.class
 com\smartnutrition\SmartNutritionApplication.class
 com\smartnutrition\dto\request\LinkStudentRequest.class
