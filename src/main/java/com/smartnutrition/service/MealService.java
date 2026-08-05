@@ -112,11 +112,28 @@ public class MealService {
 
         List<MealFoodItem> items = mealFoodItemRepository.findByMealId(meal.getId());
 
-        BigDecimal consumptionRatio = (request.overallConsumptionPercentage() != null)
+        java.util.Map<String, BigDecimal> consumptionMap = new java.util.HashMap<>();
+        if (request.foodItemConsumptions() != null) {
+            for (com.smartnutrition.dto.request.FoodItemConsumptionDto fc : request.foodItemConsumptions()) {
+                if (fc.foodName() != null) {
+                    consumptionMap.put(fc.foodName().toLowerCase().trim(), fc.consumedPercentage());
+                }
+            }
+        }
+
+        BigDecimal fallbackRatio = (request.overallConsumptionPercentage() != null)
                 ? request.overallConsumptionPercentage().divide(new BigDecimal("100"), 4, RoundingMode.HALF_UP)
                 : new BigDecimal("1.00");
 
         for (MealFoodItem item : items) {
+            BigDecimal percentage = item.getFoodName() != null ? consumptionMap.get(item.getFoodName().toLowerCase().trim()) : null;
+            BigDecimal consumptionRatio;
+            if (percentage != null) {
+                consumptionRatio = percentage.divide(new BigDecimal("100"), 4, RoundingMode.HALF_UP);
+            } else {
+                consumptionRatio = fallbackRatio;
+            }
+
             item.setConsumptionPercentage(consumptionRatio.multiply(new BigDecimal("100")).setScale(2, RoundingMode.HALF_UP));
             item.setConsumedCalories(item.getCalories() != null ? item.getCalories().multiply(consumptionRatio).setScale(2, RoundingMode.HALF_UP) : BigDecimal.ZERO);
             item.setConsumedProteinG(item.getProteinG() != null ? item.getProteinG().multiply(consumptionRatio).setScale(2, RoundingMode.HALF_UP) : BigDecimal.ZERO);

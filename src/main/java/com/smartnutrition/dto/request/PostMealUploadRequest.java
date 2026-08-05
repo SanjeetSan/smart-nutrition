@@ -6,6 +6,8 @@ import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
 
+import java.util.List;
+
 public record PostMealUploadRequest(
     @NotNull(message = "Meal ID is required")
     Long mealId,
@@ -15,7 +17,9 @@ public record PostMealUploadRequest(
     // Teacher remarks
     String teacherRemark,
 
-    // Per-item consumption percentages (keyed by food item name)
+    // Per-item consumption percentages (optional, overrides overall percentage)
+    List<@jakarta.validation.Valid FoodItemConsumptionDto> foodItemConsumptions,
+
     // If the teacher uses a simple overall slider instead of per-item
     @DecimalMin(value = "0.0") @DecimalMax(value = "100.0")
     BigDecimal overallConsumptionPercentage

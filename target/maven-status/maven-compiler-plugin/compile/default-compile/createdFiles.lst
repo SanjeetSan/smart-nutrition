@@ -4,6 +4,7 @@ com\smartnutrition\exception\GlobalExceptionHandler.class
 com\smartnutrition\dto\request\CreateStudentRequest.class
 com\smartnutrition\entity\MealFoodItem.class
 com\smartnutrition\dto\request\FoodItemDto.class
+com\smartnutrition\dto\request\FoodItemConsumptionDto.class
 com\smartnutrition\entity\School$Builder.class
 com\smartnutrition\entity\StudentAllergy.class
 com\smartnutrition\service\SocialService.class
