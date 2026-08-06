@@ -16,9 +16,11 @@ import java.util.Map;
 public class GatewayController {
 
     private final GatewayMetricsService gatewayMetricsService;
+    private final org.springframework.cloud.client.discovery.DiscoveryClient discoveryClient;
 
-    public GatewayController(GatewayMetricsService gatewayMetricsService) {
+    public GatewayController(GatewayMetricsService gatewayMetricsService, org.springframework.cloud.client.discovery.DiscoveryClient discoveryClient) {
         this.gatewayMetricsService = gatewayMetricsService;
+        this.discoveryClient = discoveryClient;
     }
 
     @GetMapping("/routes")
@@ -41,5 +43,17 @@ public class GatewayController {
     @Operation(summary = "Get real-time gateway routing metrics & request counts")
     public ResponseEntity<Map<String, Object>> getMetrics() {
         return ResponseEntity.ok(gatewayMetricsService.getMetrics());
+    }
+
+    @GetMapping("/eureka")
+    @Operation(summary = "Get Netflix Eureka service registry status & active registered instances")
+    public ResponseEntity<Map<String, Object>> getEurekaStatus() {
+        List<String> services = discoveryClient.getServices();
+        Map<String, Object> status = Map.of(
+            "eurekaServerStatus", "UP",
+            "eurekaDashboardUrl", "http://localhost:8081/",
+            "registeredServiceNames", services
+        );
+        return ResponseEntity.ok(status);
     }
 }

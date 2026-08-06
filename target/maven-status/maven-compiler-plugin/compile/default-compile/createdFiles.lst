@@ -55,6 +55,7 @@ com\smartnutrition\dto\request\UpdateProfileRequest.class
 com\smartnutrition\repository\StudentAllergyRepository.class
 com\smartnutrition\enums\AlertSeverity.class
 com\smartnutrition\entity\Class_$Builder.class
+com\smartnutrition\eureka\AppEurekaServerConfig.class
 com\smartnutrition\dto\request\CreateStudentRequest.class
 com\smartnutrition\controller\AdminController.class
 com\smartnutrition\dto\request\FoodItemConsumptionDto.class
