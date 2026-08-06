@@ -1,3 +1,4 @@
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\TeacherReportService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\entity\Message.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\entity\School.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\security\JwtAuthenticationFilter.java
@@ -15,6 +16,7 @@ C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\AssistantController.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\request\FoodItemConsumptionDto.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\repository\RefreshTokenRepository.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\TeacherReportController.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\response\UserResponse.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\security\CustomUserDetailsService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\ParentService.java
@@ -26,13 +28,16 @@ C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\enums\AlertSeverity.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\request\RefreshTokenRequest.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\repository\MealRepository.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\response\ClassReportResponse.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\entity\Meal.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\repository\MessageRepository.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\enums\Role.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\AdminController.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\enums\Relationship.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\request\RegisterRequest.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\security\SecurityConfig.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\response\MessageResponse.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\AdminService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\request\CreateStudentRequest.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\entity\RefreshToken.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\repository\StudentAllergyRepository.java
@@ -45,7 +50,9 @@ C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\enums\MealStatus.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\enums\NutritionClassification.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\repository\RecipeRepository.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\request\UpdateUserRoleRequest.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\ParentController.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\response\AdminUserResponse.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\AssistantService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\AuthService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\request\PromptRequest.java
