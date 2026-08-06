@@ -1,40 +1,32 @@
-# Smart Nutrition – AI-Powered Student Nutrition Monitoring
+# 🍱 Smart Nutrition Platform
 
-## Quick Start (Backend)
+An AI-powered school lunchbox tracking and child nutrition monitoring system built with **Spring Boot 3**, **MySQL**, and **Google Gemini 1.5 Flash Vision AI**.
 
-```bash
-# 1️⃣ Clone the repo
-git clone https://github.com/SanjeetSan/smart-nutrition.git
-cd smart-nutrition
+---
 
-# 2️⃣ Create the MySQL database & import seed data
-mysql -u root -p -e "CREATE DATABASE smart_nutrition_db;"
-mysql -u root -p smart_nutrition_db < db_dump.sql
+## 📖 Quick Links
+- 📄 **[Detailed Project Overview & Feature Guide](PROJECT_OVERVIEW.md)**
+- 🌐 **Swagger API Documentation:** `http://localhost:8081/swagger-ui.html`
 
-# 3️⃣ Create a local .env file (copy from .env.example)
-cp .env.example .env   # edit .env with your MySQL credentials & a JWT secret (256‑bit base64)
+---
 
-# 4️⃣ Build & run
-./mvnw clean package
-./mvnw spring-boot:run   # runs on http://localhost:8081
+## 🌟 Highlights & Features
+- 📸 **AI Vision Food Recognition:** Analyzes photos of lunchboxes and extracts calories, protein, carbs, fat, and fiber automatically.
+- 👨‍👩‍👧 **Parent Portal:** 1-time class code onboarding, meal tracking, leftover calculations, and AI assistant chat.
+- 👩‍🏫 **Teacher Portal:** Class student rosters, weekly & monthly nutrition aggregate reports, and leftover alerts.
+- 🛡️ **Admin Portal:** User management, promoting teachers to school management, and system health metrics.
+- 💬 **Messaging & Community:** Direct 1-on-1 parent-teacher chat and community recipe feed.
+
+---
+
+## 🚀 Getting Started
+
+```powershell
+# Navigate to the project directory
+cd C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend
+
+# Start the Spring Boot backend
+.\mvnw spring-boot:run
 ```
 
-## Swagger UI
-
-Open <http://localhost:8081/swagger-ui.html> and click **Authorize**. Paste the **Bearer token** you receive from `POST /api/auth/login`.
-
-## Invite Teammates
-
-1. In GitHub → Settings → Manage access → Invite collaborator.
-2. They clone the repo, add their own `.env`, and run the steps above.
-
-## Database
-
-* `db_dump.sql` – full schema + sample data (school, class, two students).
-* To apply changes later run `mysqldump … > db_dump.sql` and commit.
-
-## Development notes
-
-* **Java 21** – compiled with Maven wrapper (`./mvnw`).
-* **JWT secret** must be a 256‑bit base64 string (e.g., generated via `openssl rand -base64 32`).
-* **Port** – currently set to `8081` to avoid conflicts on Windows.
+Access Swagger UI at `http://localhost:8081/swagger-ui.html`.
