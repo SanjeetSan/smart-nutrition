@@ -12,6 +12,7 @@ com\smartnutrition\enums\AlertType.class
 com\smartnutrition\service\NutritionScoringService.class
 com\smartnutrition\entity\Meal.class
 com\smartnutrition\enums\Role.class
+com\smartnutrition\gateway\GatewayController.class
 com\smartnutrition\entity\Student$Builder.class
 com\smartnutrition\service\UserService.class
 com\smartnutrition\dto\response\RecipeResponse.class
@@ -61,6 +62,7 @@ com\smartnutrition\entity\StudentAllergy.class
 com\smartnutrition\dto\request\SendMessageRequest.class
 com\smartnutrition\dto\request\RecipeRequest.class
 com\smartnutrition\dto\response\ClassReportResponse.class
+com\smartnutrition\gateway\GatewayMetricsService.class
 com\smartnutrition\service\AdminService.class
 com\smartnutrition\dto\request\RefreshTokenRequest.class
 com\smartnutrition\dto\request\RegisterRequest.class
@@ -99,4 +101,5 @@ com\smartnutrition\entity\ParentStudent.class
 com\smartnutrition\entity\Friendship$Builder.class
 com\smartnutrition\service\MealImageService.class
 com\smartnutrition\SmartNutritionApplication.class
+com\smartnutrition\gateway\ApiGatewayFilter.class
 com\smartnutrition\dto\request\LinkStudentRequest.class

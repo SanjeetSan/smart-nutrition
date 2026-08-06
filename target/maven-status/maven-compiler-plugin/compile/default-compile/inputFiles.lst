@@ -19,6 +19,7 @@ C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\TeacherReportController.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\response\UserResponse.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\security\CustomUserDetailsService.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\gateway\GatewayMetricsService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\ParentService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\AuthController.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\response\ChatResponse.java
@@ -39,6 +40,7 @@ C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\response\MessageResponse.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\AdminService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\request\CreateStudentRequest.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\gateway\ApiGatewayFilter.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\entity\RefreshToken.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\repository\StudentAllergyRepository.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\request\SendMessageRequest.java
@@ -74,6 +76,7 @@ C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\enums\FoodItemSource.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\TeacherController.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\SocialController.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\gateway\GatewayController.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\MessageService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\security\JwtTokenProvider.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\repository\ClassRepository.java

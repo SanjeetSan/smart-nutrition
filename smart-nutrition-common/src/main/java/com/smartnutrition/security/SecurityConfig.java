@@ -25,11 +25,9 @@ import java.util.List;
 public class SecurityConfig {
 
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
-    private final com.smartnutrition.gateway.ApiGatewayFilter apiGatewayFilter;
 
-    public SecurityConfig(JwtAuthenticationFilter jwtAuthenticationFilter, com.smartnutrition.gateway.ApiGatewayFilter apiGatewayFilter) {
+    public SecurityConfig(JwtAuthenticationFilter jwtAuthenticationFilter) {
         this.jwtAuthenticationFilter = jwtAuthenticationFilter;
-        this.apiGatewayFilter = apiGatewayFilter;
     }
 
     @Bean
@@ -50,7 +48,6 @@ public class SecurityConfig {
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/auth/**").permitAll()
-                .requestMatchers("/api/gateway/**").permitAll()
                 .requestMatchers("/h2-console/**").permitAll()
                 .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
                 .requestMatchers("/uploads/**").permitAll()
@@ -59,7 +56,6 @@ public class SecurityConfig {
                 .anyRequest().authenticated()
             )
             .headers(headers -> headers.frameOptions(frame -> frame.disable()))
-            .addFilterBefore(apiGatewayFilter, UsernamePasswordAuthenticationFilter.class)
             .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
