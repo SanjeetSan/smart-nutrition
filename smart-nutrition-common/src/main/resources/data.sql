@@ -1,6 +1,3 @@
--- Ensure role column can hold ADMIN role
-ALTER TABLE users MODIFY COLUMN role VARCHAR(50);
-
 -- Seed School
 INSERT IGNORE INTO schools (id, name, academic_year, address, is_active, created_at)
 VALUES (1, 'Greenwood International School', '2025-2026', '123 Education Lane, Tech City', true, CURRENT_TIMESTAMP());
