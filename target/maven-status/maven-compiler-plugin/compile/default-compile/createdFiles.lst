@@ -1,3 +1,4 @@
+com\smartnutrition\controller\TeacherController.class
 com\smartnutrition\dto\request\PostMealUploadRequest.class
 com\smartnutrition\service\TeacherReportService.class
 com\smartnutrition\entity\User$Builder.class
@@ -86,6 +87,7 @@ com\smartnutrition\dto\response\AuthResponse.class
 com\smartnutrition\entity\Meal$Builder.class
 com\smartnutrition\dto\response\UserResponse.class
 com\smartnutrition\service\MealImageService$1.class
+com\smartnutrition\service\TeacherService.class
 com\smartnutrition\entity\RefreshToken.class
 com\smartnutrition\entity\User.class
 com\smartnutrition\enums\Relationship.class

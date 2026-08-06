@@ -11,4 +11,5 @@ import java.util.Optional;
 public interface ClassRepository extends JpaRepository<Class_, Long> {
     List<Class_> findByIsActiveTrue();
     Optional<Class_> findByClassCode(String classCode);
+    Optional<Class_> findByClassCodeIgnoreCase(String classCode);
 }

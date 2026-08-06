@@ -52,6 +52,7 @@ C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\repository\RecipeRepository.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\request\UpdateUserRoleRequest.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\ParentController.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\TeacherService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\response\AdminUserResponse.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\AssistantService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\AuthService.java
@@ -71,6 +72,7 @@ C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\request\PreMealUploadRequest.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\dto\response\AuthResponse.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\enums\FoodItemSource.java
+C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\TeacherController.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\controller\SocialController.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\service\MessageService.java
 C:\Users\sanje\.gemini\antigravity\scratch\smart-nutrition-backend\src\main\java\com\smartnutrition\security\JwtTokenProvider.java

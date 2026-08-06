@@ -25,7 +25,7 @@ public record CreateStudentRequest(
 
     BigDecimal heightCm,
 
-    @Size(max = 5, message = "Blood group cannot exceed 5 characters")
+    @Size(max = 20, message = "Blood group cannot exceed 20 characters")
     String bloodGroup,
 
     @NotBlank(message = "Class code is required")

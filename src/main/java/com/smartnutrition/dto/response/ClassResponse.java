@@ -5,5 +5,6 @@ public record ClassResponse(
     String className,
     String section,
     String academicYear,
+    String classCode,
     String schoolName
 ) {}

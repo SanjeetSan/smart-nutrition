@@ -34,7 +34,7 @@ public class User {
 
     @NotNull
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false, length = 20)
+    @Column(nullable = false, length = 50)
     private Role role;
 
     @Column(name = "is_active", nullable = false)
